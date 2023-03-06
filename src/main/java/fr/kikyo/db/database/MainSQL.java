@@ -39,7 +39,20 @@ public class MainSQL {
 
     }
 
-    public Connection getConnection(){
+    public void close() {
+        try {
+            disconnect();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+    private void disconnect() throws SQLException {
+        if (this.connection != null && !this.connection.isClosed()) {
+            this.connection.close();
+        }
+
+    }
+        public Connection getConnection(){
         return connection;
     }
 
