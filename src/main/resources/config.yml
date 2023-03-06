@@ -1,0 +1,5 @@
+name: "test"
+host: "localhost"
+user: "root"
+pass: "1234"
+port: 3306

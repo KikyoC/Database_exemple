@@ -1,0 +1,9 @@
+name: Test
+version: 0.1
+author: KikyoC
+main: fr.kikyo.db.Main
+
+commands:
+  database:
+    description: Main commands
+    aliases: [db, d]
